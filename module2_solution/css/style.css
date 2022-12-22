@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
+}
+
+h1.title-text {
+    font-weight: bold;
+    font-size: 175%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.container-box {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container-box__box1, .container-box__box2, .container-box__box3 {
+    display: inline-block;
+    /*width: 30%;*/
+    background: darkgray;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+}
+
+.container-box__box1-title, .container-box__box2-title, .container-box__box3-title {
+    font-weight: bold;
+    color: black;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 125%;
+}
+.container-box__box1-title {
+    color: #000;
+    background: rgb(220, 164, 173);
+}
+
+.container-box__box2-title {
+    color: #fff;
+    background: rgb(136, 42, 42);
+}
+
+.container-box__box3-title {
+    color: #000;
+    background: rgb(237, 223, 116);
+}
+
+.container-box__box1-text, .container-box__box2-text, .container-box__box3-text {
+   margin-top: 10px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container-box__box1, .container-box__box2, .container-box__box3 {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container-box__box1, .container-box__box2, .container-box__box3 {
+        margin: 10px;
+    }
+    
+    .container-box__box1, .container-box__box2{
+        width: 47%;
+    }
+
+    .container-box__box3 {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-box__box1, .container-box__box2, .container-box__box3 {
+        width: 97%;
+    }
+}
